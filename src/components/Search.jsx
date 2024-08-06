@@ -4,12 +4,13 @@ useRef hook for storing information between renders of Typeahead component
 import useFetch from '../hooks/useFetch.js';
 import {Typeahead} from 'react-bootstrap-typeahead';
 import { Container} from 'react-bootstrap';
+import  {API_URL} from '../constants/Api.jsx';
 import Button from './Button.jsx';
 import '../styles/Search.css';
 function Search(){
  const ref = useRef(null);
  //Calling the Custom Hook when there is change in state variable which triggers re-render
-const{data}=useFetch('http://localhost:3031/users');
+const{data}=useFetch(API_URL);
 return(
     <Container className="Search" > 
     <Typeahead
