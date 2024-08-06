@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Search from './components/Search.jsx';
 
 function App() {
