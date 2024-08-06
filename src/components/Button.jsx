@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+/* Button is styled Component*/
 const Button = styled.button`
     margin-top:30px;
     margin-right:20px;
@@ -13,5 +14,4 @@ const Button = styled.button`
 	font-size: 16px;
 	text-decoration: none;
     `;
-
     export default Button;
